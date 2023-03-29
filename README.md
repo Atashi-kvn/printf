@@ -1,103 +1,63 @@
-##0x11. C - printf team project
-###Description
-This project is a group project aimed at implementing the printf function in C language. The function is designed to produce output according to a format.
-###Usage
-To use the printf function, first clone the repository using the following command:
+README.md
+0x11. C - printf team project
 
-git clone https://github.com/<username>/printf.git
+###Environment
 
-After cloning, navigate to the repository directory and compile the source files using your preferred C compiler. For example, using gcc:
+Language: C Editor: VIM 8.1.2269 Compiler: gcc 9.3.0 Wall -Werror -Wextra -pedantic -std=gnu89 Style guidelines: [Betty style] ###Project Specification
 
-gcc -Wall -Werror -Wextra -pedantic *.c -o printf
+No allowed to use global variable No more than 5 functions per file All files end with a new line
 
-You can then use the printf function in your C code by including the holberton.h header file and calling the function as follows:
+Group Project: Team members: JOY EMOJORHO JOHN EBHOHIMEN
 
-#include "holberton.h"
+I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
+Write a function that produces output according to a format.
 
-int main(void)
-{
-    _printf("Hello, %s!\n", "world");
-    return (0);
-}
+0. Education is when you read the fine print. Experience is what you get if you don' t
+Handle the following conversion specifiers:
 
-###Conversion Specifiers
-The following conversion specifiers have been implemented:
-%c: prints a single character
-%s: prints a string of characters
-%%: prints a percent sign
-%d, %i: prints a signed integer
-%u: prints an unsigned integer
-%o: prints an octal integer
-%x, %X: prints a hexadecimal integer
-###Custom Conversion Specifiers
-The following custom conversion specifiers have been implemented:
-%b: prints an unsigned integer in binary form
-%S: prints a string of characters, printing non-printable ASCII characters in the format \x, followed by the ASCII code value in hexadecimal
-%r: prints a string of characters in reverse order
-%R: prints a string of characters with the ROT13 substitution cipher applied
-###Flags, Width and Precision
-The following flags, width and precision modifiers have been implemented:
-+: prints a sign for positive numbers after the % character.
-space: prints a space for positive numbers after the % character when a sign isn't printed
-#: adds the prefix 0 for octal numbers and 0x or 0X for hexadecimal numbers
-0: pads the output with zeros to the left of the value.
--: left-aligns the output in the field width.
-*: replaces the width or precision field with the integer argument immediately following the format string.
-##Length Modifiers
-The following length modifiers are handled for non-custom conversion specifiers:
-l: for long integer types
-h: for short integer types
-##Field Width
-The field width can be specified using a positive integer value. If the output is less than the specified width, it will be padded with spaces (or zeros if the 0 flag is used).
-##Precision
-The precision can be specified using a period followed by a positive integer value. This is used to specify the maximum number of characters to be printed for strings, or the minimum number of digits to be printed for integers.
+1. With a face like mine, I do better in print
+Handle the following custom conversion specifiers:
 
-###Examples
+2. What one has not experienced, one will never understand in print
+Handle the following conversion specifiers:
 
-#include "holberton.h"
+3. Nothing in fine print is ever good news
+Use a local buffer of 1024 chars in order to call write as little as possible.
 
-int main(void)
-{
-    char c = 'H';
-    char *str = "Hello, world!";
-    int num = 8;
+4. My weakness is wearing too much leopard print
+Handle the following custom conversion specifier:
 
-    _printf("%c\n", c);
-    /* Output: H */
+5. How is the world ruled and led to war? Diplomats lie to journalists and believe t hese lies when they see them in print
+Handle the following conversion specifier: p.
 
-    _printf("%s\n", str);
-    /* Output: Hello, world! */
+6. The big print gives and the small print takes away
+Handle the following flag characters for non-custom conversion specifiers:
 
-    _printf("%%\n");
-    /* Output: % */
+7. Sarcasm is lost in print
+Handle the following length modifiers for non-custom conversion specifiers:
 
-    _printf("%d\n", num);
-    /* Output: 8 */
+Conversion specifiers to handle: d, i, u, o, x, X
 
-    _printf("%u\n", num);
-    /* Output: 8 */
+9. Print some money and give it to us for the rain forests
+Handle the field width for non-custom conversion specifiers.
 
-    _printf("%o\n", num);
-    /* Output: 10 */
+10. The negative is the equivalent of the composer's score, and the print the perfor mance
+Handle the precision for non-custom conversion specifiers.
 
-    _printf("%x\n", num);
-    /* Output: 8 */
+11. It's depressing when you're still around and your albums are out of print
+Handle the 0 flag character for non-custom conversion specifiers.
 
-    _printf("%X\n", num);
-    /* Output: 8 */
+12. Every time that I wanted to give up, if I saw an interesting textile, print what ever, suddenly I would see a collection
+Handle the - flag character for non-custom conversion specifiers.
 
-    _printf("%b\n", num);
-    /* Output: 1000 */
+13. Print is the sharpest and the strongest weapon of our party
+Handle the following custom conversion specifier:
 
-    _printf("%S\n", "Holberton\tSchool");
-    /* Output: Holberton\x09School */
+13. The flood of print has turned reading into a process of gulping rather than savo ring
+Handle the following custom conversion specifier:
 
-    _printf("%r\n", str);
-    /* Output: !dlrow ,
+All the above options work well together.
 
-Authors
+##Authors:
 Kelvin Atandi
-Masilela Zile
-
-
-
+Thokozile Masilela
